@@ -1,45 +1,45 @@
-# OpenWrt luci feed
+# OpenWrt LuCI 软件仓库
 
 [![Translation status](https://hosted.weblate.org/widgets/openwrt/-/svg-badge.svg)](https://hosted.weblate.org/engage/openwrt/?utm_source=widget)
 
-## Description
+## 描述
 
-This is the OpenWrt "luci"-feed containing LuCI - OpenWrt Configuration Interface.
+这是包含 LuCI（OpenWrt 配置界面）的 OpenWrt“luci”-软件接口。
 
-## Usage
+## 用法
 
-This feed is enabled by default. Your feeds.conf.default (or feeds.conf) should contain a line like:
+此 feed 默认启用。您的 feeds.conf.default（或 feeds.conf）应该包含如下行：
 ```
-src-git luci https://github.com/openwrt/luci.git
+src-git luci https://github.com/jqxsjm/luci.git
 ```
 
-To install all its package definitions, run:
+要安装所有包定义，请运行：
 ```
 ./scripts/feeds update luci
 ./scripts/feeds install -a -p luci
 ```
 
-## API Reference
+## API 参考
 
-You can browse the generated API documentation directly on Github.
+您可以直接在Github上浏览生成的API文档。
 
- - [Server side Lua APIs](http://openwrt.github.io/luci/api/index.html)
- - [Client side JavaScript APIs](http://openwrt.github.io/luci/jsapi/index.html)
+ - [服务器端 Lua API](http://openwrt.github.io/luci/api/index.html)
+ - [客户端 JavaScript API](http://openwrt.github.io/luci/jsapi/index.html)
 
-## Development
+## 发展
 
-Documentation for developing and extending LuCI can be found [in the Wiki](https://github.com/openwrt/luci/wiki)
+可以找到开发和扩展 LuCI 的文档 [在 Wiki](https://github.com/openwrt/luci/wiki)
 
-## License
+## 执照
 
-See [LICENSE](LICENSE) file.
+参见 [LICENSE](LICENSE) 文件。
  
-## Package Guidelines
+## 包装指南
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) file.
+参见 [CONTRIBUTING.md](CONTRIBUTING.md) 文件。
 
-## Translation status
+## 翻译状态
 
-Use [Weblate](https://hosted.weblate.org/engage/openwrt/?utm_source=widget) instead of direct editing of the `*.po` files.
+使用 [Weblate](https://hosted.weblate.org/engage/openwrt/?utm_source=widget) 而不是直接编辑“*.po”文件。
 
 [![Translation status](https://hosted.weblate.org/widgets/openwrt/-/multi-auto.svg)](https://hosted.weblate.org/engage/openwrt/?utm_source=widget)
